@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="Chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Discord</title>
+</head>
+<body>
+    <div class="opacity"></div>
+    <header id="main-header">
+        <nav id="gnb">
+            <a href="top.gg" style="padding: 0;"><img src="images/discord-icon.png" alt="icon"></a>
+            <ul class="header__menu">
+                <li><a href="">Explore</a></li>
+                <li><div class="header__menu--dropbox">Add</div></li>
+                <li><a href="">Advertise</a></li>
+                <li><a href="">···</a></li>
+            </ul>
+            <div class="header__search">
+                <input type="text" placeholder="Search fot the top Servers, Bots in Discord..." class="header__search--input">
+            </div>
+            <div class="header__auth">
+                <div class="header__auth--user">
+                    <svg viewBox="0 0 24 24" focusable="false" class="chakra-icon css-7lr8wu" role="img" aria-label=" avatar"><path opacity="0.2" d="M12 15C15.3137 15 18 12.3137 18 9C18 5.68629 15.3137 3 12 3C8.68629 3 6 5.68629 6 9C6 12.3137 8.68629 15 12 15Z" fill="currentColor"></path><path d="M12 15C15.3137 15 18 12.3137 18 9C18 5.68629 15.3137 3 12 3C8.68629 3 6 5.68629 6 9C6 12.3137 8.68629 15 12 15Z" stroke="currentColor" stroke-miterlimit="10"></path><path d="M2.90527 20.2491C3.82736 18.6531 5.15322 17.3278 6.74966 16.4064C8.34611 15.485 10.1569 15 12.0002 15C13.8434 15 15.6542 15.4851 17.2506 16.4065C18.8471 17.3279 20.1729 18.6533 21.0949 20.2493" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                </div>
+                <a class="header__auth--login">Login</a>
+                <button class="header__auth--button"><img src="images/hamburger.png" alt="hamburger"></button>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <section id="search">
+            <h1 class="search--title">Explore millions of Discord Bots & Servers</h1>
+            <div class="search--container">
+                <input class="search--input" type="text" placeholder="Search for the top Servers, Bots in Discord...">
+                <button class="search--button"><svg viewBox="0 0 24 24" focusable="false" class="chakra-icon css-oe30j9" aria-hidden="true"><g opacity="0.2"><path d="M10.8745 18.75C15.2238 18.75 18.7495 15.2242 18.7495 10.875C18.7495 6.52576 15.2238 3 10.8745 3C6.52527 3 2.99951 6.52576 2.99951 10.875C2.99951 15.2242 6.52527 18.75 10.8745 18.75Z" fill="currentColor"></path></g><path d="M10.8745 18.75C15.2238 18.75 18.7495 15.2242 18.7495 10.875C18.7495 6.52576 15.2238 3 10.8745 3C6.52527 3 2.99951 6.52576 2.99951 10.875C2.99951 15.2242 6.52527 18.75 10.8745 18.75Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16.4424 16.4438L20.9987 21.0002" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+            </div>
+            <div class="search__hash__container">
+                <a href="#" class="search--hash" style="margin: 0;"><span>#</span>Gaming</a>
+                <a href="#" class="search--hash"><span>#</span>Social</a>
+                <a href="#" class="search--hash"><span>#</span>Fun</a>
+                <a href="#" class="search--hash"><span>#</span>Anime</a>
+                <a href="#" class="search--hash"><span>#</span>Meme</a>
+                <a href="#" class="search--hash"><span>#</span>Music</a>
+                <a href="#" class="search--hash"><span>#</span>Roleplay</a>
+                <a href="#" class="search--hash"><span>#</span>Minecraft</a>
+                <a href="#" class="search--hash"><span>#</span>Giveaway</a>
+                <a href="#" class="search--hash"><span>#</span>Moderation</a>
+            </div>
+        </section>
+        <main id="main">
+            <section class="discord-bots">
+                <div class="discord__title">
+                    <a class="discord-title--onclick">Discord Bots</a>
+                    <a class="discord-title" href="file:///Users/namdoosung/Desktop/GIT/TIL/web_Publishing/discord_v2/servers.html">Discord Servers</a>
+                </div>
+                <div class="discord__filter">
+                    <div class="discord-filter__toggle"></div>
+                    <div class="discord__filter--top" onclick="showTop()">🔥 Top</div>
+                    <div class="discord__filter--new" onclick="showNew()">✨ New</div>
+                </div>
+                <div class="bots__text">
+                    <a href="#">Top Bots</a>
+                    <h2>Top voted bots on Top.gg</h2>
+                </div>
+                <article class="bots-content">
+                    <div class="bots__items">
+                        <div class="bots__items--container">
+                            <img class="bots__img" src="images/mushroom.png" alt="mushroom">
+                            <div class="items__container">
+                                <div class="items__title">
+                                    <div class="items__title--h1">
+                                        <h1>Mushroom</h1>
+                                        <div class="items__tags">
+                                            <a href="#" class="tags__promoted"># Promoted</a>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="items__learn">
+                                        <button>learn more</button><img class="items__redirect" src="images/redirect.png" alt="redirect">
+                                    </a>
+                                </div>
+                                <p class="items__desc">Join the Largest User Network on Top.gg • Quests for 2k+ games • Buy 6000+ unique pets OR sell your own • Coin Economy • Leaderboards</p>
+                            </div>
+                        </div>
+                        <p class="items__desc">Join the Largest User Network on Top.gg • Quests for 2k+ games • Buy 6000+ unique pets OR sell your own • Coin Economy • Leaderboards</p>
+                        <div>
+                            <a href="#" class="items__learn">
+                                <button>learn more</button><img class="items__redirect" src="images/redirect.png" alt="redirect">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bots__items">
+                        <div class="bots__items--container">
+                            <img class="bots__img" src="images/mee6.png" alt="MEE6">
+                            <div class="items__container">
+                                <div class="items__title">
+                                    <div class="items__title--h1">
+                                        <h1>MEE6</h1>
+                                        <div class="items__tags">
+                                            <a href="#" class="tags__promoted"># Promoted</a>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="items__learn">
+                                        <button>learn more</button><img class="items__redirect" src="images/redirect.png" alt="redirect">
+                                    </a>
+                                </div>
+                                <p class="items__desc">The most complete & easy-to-use Discord bot! Advanced auto-moderation, leveling, Twitch and Youtube alerts & much more!</p>
+                            </div>
+                        </div>
+                        <p class="items__desc">The most complete & easy-to-use Discord bot! Advanced auto-moderation, leveling, Twitch and Youtube alerts & much more!</p>
+                        <div>
+                            <a href="#" class="items__learn">
+                                <button>learn more</button><img class="items__redirect" src="images/redirect.png" alt="redirect">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bots__items">
+                        <div class="bots__items--container">
+                            <img class="bots__img" src="images/mudae.png" alt="Mudae">
+                            <div class="items__container">
+                                <div class="items__title">
+                                    <div class="items__title--h1">
+                                        <h1>Mudae</h1>
+                                        <div class="items__tags">
+                                            <a href="#" class="items__tags--star"><img src="images/star.png" alt="star">4.5</a>
+                                            <a href="#" class="items__tags--star"><img src="images/user-icon.png" alt="user-icon">2,412,364</a>
+                                            <a href="#" class="items__tags--tag"><p>#</p>Anime</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="items__learn">
+                                            <button>Invite</button>
+                                        </a>
+                                        <a href="#" class="items__learn">
+                                            <svg viewBox="0 0 12 8" focusable="false" class="chakra-icon css-131qxj9"><path d="M0 8L6 0.5L12 8H0Z"></path></svg><button>Vote (3.45M)</button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="items__desc">The most complete & easy-to-use Discord bot! Advanced auto-moderation, leveling, Twitch and Youtube alerts & much more!</p>
+                            </div>
+                        </div>
+                        <p class="items__desc">The most complete & easy-to-use Discord bot! Advanced auto-moderation, leveling, Twitch and Youtube alerts & much more!</p>
+                        <div>
+                            <a href="#" class="items__learn">
+                                <button>Invite</button>
+                            </a>
+                            <a href="#" class="items__learn">
+                                <svg viewBox="0 0 12 8" focusable="false" class="chakra-icon css-131qxj9"><path d="M0 8L6 0.5L12 8H0Z"></path></svg><button>Vote (3.45M)</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bots__items">
+                        <div class="bots__items--container">
+                            <img class="bots__img" src="images/karuta.png" alt="karuta">
+                            <div class="items__container">
+                                <div class="items__title">
+                                    <div class="items__title--h1">
+                                        <h1>Karuta</h1>
+                                        <div class="items__tags">
+                                            <a href="#" class="items__tags--star"><img src="images/star.png" alt="star">4.3</a>
+                                            <a href="#" class="items__tags--star"><img src="images/user-icon.png" alt="user-icon">444,906</a>
+                                            <a href="#" class="items__tags--tag"><p>#</p>Anime</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="items__learn">
+                                            <button>Invite</button>
+                                        </a>
+                                        <a href="#" class="items__learn">
+                                            <svg viewBox="0 0 12 8" focusable="false" class="chakra-icon css-131qxj9"><path d="M0 8L6 0.5L12 8H0Z"></path></svg><button>Vote (2.28M)</button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="items__desc">The most complete & easy-to-use Discord bot! Advanced auto-moderation, leveling, Twitch and Youtube alerts & much more!</p>
+                            </div>
+                        </div>
+                        <p class="items__desc">The most complete & easy-to-use Discord bot! Advanced auto-moderation, leveling, Twitch and Youtube alerts & much more!</p>
+                        <div>
+                            <a href="#" class="items__learn">
+                                <button>Invite</button>
+                            </a>
+                            <a href="#" class="items__learn">
+                                <svg viewBox="0 0 12 8" focusable="false" class="chakra-icon css-131qxj9"><path d="M0 8L6 0.5L12 8H0Z"></path></svg><button>Vote (2.28M)</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bots__items">
+                        <div class="bots__items--container">
+                            <img class="bots__img" src="images/dank.png" alt="karuta">
+                            <div class="items__container">
+                                <div class="items__title">
+                                    <div class="items__title--h1">
+                                        <h1>Dank Memer</h1>
+                                        <div class="items__tags">
+                                            <a href="#" class="items__tags--star"><img src="images/star.png" alt="star">4.8</a>
+                                            <a href="#" class="items__tags--star"><img src="images/user-icon.png" alt="user-icon">7,862,964</a>
+                                            <a href="#" class="items__tags--tag"><p>#</p>Economy</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="items__learn">
+                                            <button>Invite</button>
+                                        </a>
+                                        <a href="#" class="items__learn">
+                                            <svg viewBox="0 0 12 8" focusable="false" class="chakra-icon css-131qxj9"><path d="M0 8L6 0.5L12 8H0Z"></path></svg><button>Vote (2.24M)</button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="items__desc">The most complete & easy-to-use Discord bot! Advanced auto-moderation, leveling, Twitch and Youtube alerts & much more!</p>
+                            </div>
+                        </div>
+                        <p class="items__desc">The most complete & easy-to-use Discord bot! Advanced auto-moderation, leveling, Twitch and Youtube alerts & much more!</p>
+                        <div>
+                            <a href="#" class="items__learn">
+                                <button>Invite</button>
+                            </a>
+                            <a href="#" class="items__learn">
+                                <svg viewBox="0 0 12 8" focusable="false" class="chakra-icon css-131qxj9"><path d="M0 8L6 0.5L12 8H0Z"></path></svg><button>Vote (2.24M)</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bots__items">
+                        <div class="bots__items--container">
+                            <img class="bots__img" src="images/poketwo.png" alt="karuta">
+                            <div class="items__container">
+                                <div class="items__title">
+                                    <div class="items__title--h1">
+                                        <h1>Pokétwo</h1>
+                                        <div class="items__tags">
+                                            <a href="#" class="items__tags--star"><img src="images/star.png" alt="star">4.7</a>
+                                            <a href="#" class="items__tags--star"><img src="images/user-icon.png" alt="user-icon">707,388</a>
+                                            <a href="#" class="items__tags--tag"><p>#</p>Anime</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="items__learn">
+                                            <button>Invite</button>
+                                        </a>
+                                        <a href="#" class="items__learn">
+                                            <svg viewBox="0 0 12 8" focusable="false" class="chakra-icon css-131qxj9"><path d="M0 8L6 0.5L12 8H0Z"></path></svg><button>Vote (1.84M)</button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="items__desc">The most complete & easy-to-use Discord bot! Advanced auto-moderation, leveling, Twitch and Youtube alerts & much more!</p>
+                            </div>
+                        </div>
+                        <p class="items__desc">The most complete & easy-to-use Discord bot! Advanced auto-moderation, leveling, Twitch and Youtube alerts & much more!</p>
+                        <div>
+                            <a href="#" class="items__learn">
+                                <button>Invite</button>
+                            </a>
+                            <a href="#" class="items__learn">
+                                <svg viewBox="0 0 12 8" focusable="false" class="chakra-icon css-131qxj9"><path d="M0 8L6 0.5L12 8H0Z"></path></svg><button>Vote (1.84M)</button>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="bots-content">
+                    <div class="bots__items">
+                        <div class="bots__items--container">
+                            <img class="bots__img" src="https://images.discordapp.net/icons/394854570926407682/a_cde20ddb9e028bcac92ef191e895e1bc.png?size=128" alt="mushroom">
+                            <div class="items__container">
+                                <div class="items__title">
+                                    <div class="items__title--h1">
+                                        <h1>ChillBar | Chatting ・ Voice ・ Anime ・ Social ・ Welcoming ・ Nitro ・ Emojis/Emotes ・ Stickers</h1>
+                                        <div class="items__tags">
+                                            <a href="#" class="items__tags--star"><img src="images/user-icon.png" alt="user-icon">261,312</a>
+                                            <a href="#" class="tags__promoted"># Promoted</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="items__learn">
+                                            <button>Join</button>
+                                        </a>
+                                        <a href="#" class="items__learn">
+                                            <svg viewBox="0 0 12 8" focusable="false" class="chakra-icon css-131qxj9"><path d="M0 8L6 0.5L12 8H0Z"></path></svg><button>Vote (3.45M)</button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="items__desc">#1 Most Active Community 💬 Social 🔊 24/7 VC 💝 Anime ⭐ 500 Emotes ⭐ Gaming ⭐ Relaxed ⭐ Meet New People ⭐ Custom Bots ⭐ Giveaways ⭐ More!</p>
+                            </div>
+                        </div>
+                        <p class="items__desc">#1 Most Active Community 💬 Social 🔊 24/7 VC 💝 Anime ⭐ 500 Emotes ⭐ Gaming ⭐ Relaxed ⭐ Meet New People ⭐ Custom Bots ⭐ Giveaways ⭐ More!</p>
+                        <div>
+                            <a href="#" class="items__learn">
+                                <button>learn more</button><img class="items__redirect" src="images/redirect.png" alt="redirect">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bots__items">
+                        <div class="bots__items--container">
+                            <img class="bots__img" src="https://images.discordapp.net/icons/764078865864720396/ee654ef4bc2d8d6cc272d2485018aefe.png?size=128" alt="Addicted 18+">
+                            <div class="items__container">
+                                <div class="items__title">
+                                    <div class="items__title--h1">
+                                        <h1>Addicted 18+</h1>
+                                        <div class="items__tags">
+                                            <a href="#" class="items__tags--star"><img src="images/user-icon.png" alt="user-icon">23,970</a>
+                                            <a href="#" class="tags__promoted"># Promoted</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="items__learn">
+                                            <button>Join</button>
+                                        </a>
+                                        <a href="#" class="items__learn">
+                                            <svg viewBox="0 0 12 8" focusable="false" class="chakra-icon css-131qxj9"><path d="M0 8L6 0.5L12 8H0Z"></path></svg><button>Vote (3.45M)</button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="items__desc">Addicted 18+ Adults only! Active VC & text chats! Among us/TOU/Codenames/Jackbox +More! Lounge! Self roles! Selfies! Meet new friends! Date!</p>
+                            </div>
+                        </div>
+                        <p class="items__desc">Addicted 18+ Adults only! Active VC & text chats! Among us/TOU/Codenames/Jackbox +More! Lounge! Self roles! Selfies! Meet new friends! Date!</p>
+                        <div>
+                            <a href="#" class="items__learn">
+                                <button>learn more</button><img class="items__redirect" src="images/redirect.png" alt="redirect">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bots__items">
+                        <div class="bots__items--container">
+                            <img class="bots__img" src="https://images.discordapp.net/icons/582689404615917579/a_aa0478d39005b2a54edee2e512d83a5e.png?size=128" alt="Addicted 18+">
+                            <div class="items__container">
+                                <div class="items__title">
+                                    <div class="items__title--h1">
+                                        <h1>angel | anime ⋆ social ⋆ wholesome ⋆ events ⋆ gaming ⋆ fun</h1>
+                                        <div class="items__tags">
+                                            <a href="#" class="items__tags--star"><img src="images/star.png" alt="star">3.4</a>
+                                            <a href="#" class="items__tags--star"><img src="images/user-icon.png" alt="user-icon">215,924</a>
+                                            <a href="#" class="items__tags--tag"><p>#</p>Among us</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="items__learn">
+                                            <button>Join</button>
+                                        </a>
+                                        <a href="#" class="items__learn">
+                                            <svg viewBox="0 0 12 8" focusable="false" class="chakra-icon css-131qxj9"><path d="M0 8L6 0.5L12 8H0Z"></path></svg><button>Vote (3.45M)</button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="items__desc">18+ No.1 Adults Verified SFW & Sinful Community• Profiles • Selfies • Dating • Gambling• 24/7 Active VC & Chats•Free VIP• How to join on IOS</p>
+                            </div>
+                        </div>
+                        <p class="items__desc">18+ No.1 Adults Verified SFW & Sinful Community• Profiles • Selfies • Dating • Gambling• 24/7 Active VC & Chats•Free VIP• How to join on IOS</p>
+                        <div>
+                            <a href="#" class="items__learn">
+                                <button>learn more</button><img class="items__redirect" src="images/redirect.png" alt="redirect">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bots__items">
+                        <div class="bots__items--container">
+                            <img class="bots__img" src="https://images.discordapp.net/icons/588106178748350484/a_32a78b2b24ac610cad4cd1a4ed060f1d.png?size=128" alt="Addicted 18+">
+                            <div class="items__container">
+                                <div class="items__title">
+                                    <div class="items__title--h1">
+                                        <h1>Social Lites</h1>
+                                        <div class="items__tags">
+                                            <a href="#" class="items__tags--star"><img src="images/star.png" alt="star">4.2</a>
+                                            <a href="#" class="items__tags--star"><img src="images/user-icon.png" alt="user-icon">50,279</a>
+                                            <a href="#" class="items__tags--tag"><p>#</p>Emotes</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="items__learn">
+                                            <button>Join</button>
+                                        </a>
+                                        <a href="#" class="items__learn">
+                                            <svg viewBox="0 0 12 8" focusable="false" class="chakra-icon css-131qxj9"><path d="M0 8L6 0.5L12 8H0Z"></path></svg><button>Vote (3.45M)</button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="items__desc">Growing sfw social gaming Active VCs/Chat Emotes Giveaways snapchat instagram egirls gaming anime memes tiktok discord: CLICK VIEW</p>
+                            </div>
+                        </div>
+                        <p class="items__desc">Growing sfw social gaming Active VCs/Chat Emotes Giveaways snapchat instagram egirls gaming anime memes tiktok discord: CLICK VIEW</p>
+                        <div>
+                            <a href="#" class="items__learn">
+                                <button>learn more</button><img class="items__redirect" src="images/redirect.png" alt="redirect">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bots__items">
+                        <div class="bots__items--container">
+                            <img class="bots__img" src="https://images.discordapp.net/icons/741965642336567338/a_9c57533eaf535f53fe50fcaeded4fcc9.png?size=128" alt="Addicted 18+">
+                            <div class="items__container">
+                                <div class="items__title">
+                                    <div class="items__title--h1">
+                                        <h1>BORED</h1>
+                                        <div class="items__tags">
+                                            <a href="#" class="items__tags--star"><img src="images/star.png" alt="star">2.9</a>
+                                            <a href="#" class="items__tags--star"><img src="images/user-icon.png" alt="user-icon">23,319</a>
+                                            <a href="#" class="items__tags--tag"><p>#</p>Social</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="items__learn">
+                                            <button>Join</button>
+                                        </a>
+                                        <a href="#" class="items__learn">
+                                            <svg viewBox="0 0 12 8" focusable="false" class="chakra-icon css-131qxj9"><path d="M0 8L6 0.5L12 8H0Z"></path></svg><button>Vote (3.45M)</button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="items__desc">⭐Bored is a chill community server | We offer | 24/7 Chat | Booster Roles | Friendly community | Events⭐</p>
+                            </div>
+                        </div>
+                        <p class="items__desc">⭐Bored is a chill community server | We offer | 24/7 Chat | Booster Roles | Friendly community | Events⭐</p>
+                        <div>
+                            <a href="#" class="items__learn">
+                                <button>learn more</button><img class="items__redirect" src="images/redirect.png" alt="redirect">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bots__items">
+                        <div class="bots__items--container">
+                            <img class="bots__img" src="https://images.discordapp.net/icons/785242827789434931/a_cc0f7b20ab2e42717849ab5ac0eb53e0.png?size=128" alt="Addicted 18+">
+                            <div class="items__container">
+                                <div class="items__title">
+                                    <div class="items__title--h1">
+                                        <h1>Kitten ฅ^•ﻌ•^ฅ</h1>
+                                        <div class="items__tags">
+                                            <a href="#" class="items__tags--star"><img src="images/star.png" alt="star">4.8</a>
+                                            <a href="#" class="items__tags--star"><img src="images/user-icon.png" alt="user-icon">17,156</a>
+                                            <a href="#" class="items__tags--tag"><p>#</p>Anime</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="items__learn">
+                                            <button>Join</button>
+                                        </a>
+                                        <a href="#" class="items__learn">
+                                            <svg viewBox="0 0 12 8" focusable="false" class="chakra-icon css-131qxj9"><path d="M0 8L6 0.5L12 8H0Z"></path></svg><button>Vote (3.45M)</button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="items__desc">kitten ♡
+                                    cute aesthetic server
+                                    tons of giveaways!
+                                    discord.gg/kitten - 400+ emotes with custom currency/trivia bot!
+                                </p>
+                            </div>
+                        </div>
+                        <p class="items__desc">kitten ♡
+                            cute aesthetic server
+                            tons of giveaways!
+                            discord.gg/kitten - 400+ emotes with custom currency/trivia bot!</p>
+                        <div>
+                            <a href="#" class="items__learn">
+                                <button>learn more</button><img class="items__redirect" src="images/redirect.png" alt="redirect">
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="add">
+                <div class="add__join">
+                    <a href="">
+                        <svg viewBox="0 0 25 24" focusable="false" class="chakra-icon css-1s6ukfj"><path d="M20.1239 4.45894C18.7217 3.78366 17.2181 3.28614 15.6459 3.0012C15.6173 2.9957 15.5887 3.00944 15.5739 3.03693C15.3805 3.39792 15.1663 3.86887 15.0163 4.23903C13.3254 3.97333 11.6431 3.97333 9.9868 4.23903C9.83676 3.86064 9.61478 3.39792 9.42053 3.03693C9.40578 3.01036 9.37718 2.99661 9.34855 3.0012C7.77725 3.28523 6.2736 3.78275 4.87052 4.45894C4.85838 4.46444 4.84797 4.47361 4.84106 4.48551C1.98894 8.95771 1.20763 13.32 1.59092 17.6282C1.59265 17.6492 1.60392 17.6694 1.61953 17.6822C3.50128 19.1326 5.32407 20.0132 7.11301 20.5968C7.14164 20.606 7.17197 20.595 7.19019 20.5702C7.61337 19.9637 7.99059 19.3242 8.31402 18.6516C8.33311 18.6122 8.31489 18.5655 8.27588 18.5499C7.67754 18.3117 7.1078 18.0212 6.55975 17.6914C6.5164 17.6648 6.51293 17.5997 6.55281 17.5686C6.66814 17.4779 6.7835 17.3835 6.89363 17.2882C6.91355 17.2708 6.94131 17.2671 6.96474 17.2781C10.5652 19.0035 14.4631 19.0035 18.021 17.2781C18.0445 17.2662 18.0722 17.2699 18.093 17.2873C18.2032 17.3826 18.3185 17.4779 18.4347 17.5686C18.4746 17.5997 18.472 17.6648 18.4286 17.6914C17.8806 18.0276 17.3108 18.3117 16.7116 18.549C16.6726 18.5646 16.6553 18.6122 16.6744 18.6516C17.0047 19.3232 17.382 19.9627 17.7973 20.5693C17.8147 20.595 17.8459 20.606 17.8745 20.5968C19.6721 20.0132 21.4949 19.1326 23.3766 17.6822C23.3931 17.6694 23.4035 17.6502 23.4053 17.6291C23.864 12.6483 22.637 8.32185 20.1525 4.48642C20.1465 4.47361 20.1361 4.46444 20.1239 4.45894ZM8.85169 15.0049C7.76771 15.0049 6.87454 13.9604 6.87454 12.6777C6.87454 11.3949 7.75039 10.3504 8.85169 10.3504C9.96163 10.3504 10.8462 11.4041 10.8288 12.6777C10.8288 13.9604 9.95296 15.0049 8.85169 15.0049ZM16.1619 15.0049C15.0779 15.0049 14.1847 13.9604 14.1847 12.6777C14.1847 11.3949 15.0606 10.3504 16.1619 10.3504C17.2718 10.3504 18.1563 11.4041 18.139 12.6777C18.139 13.9604 17.2718 15.0049 16.1619 15.0049Z" fill="currentColor" fill-opacity="0.2"></path><path d="M20.1239 4.45894C18.7217 3.78366 17.2181 3.28614 15.6459 3.0012C15.6173 2.9957 15.5887 3.00944 15.5739 3.03693C15.3805 3.39792 15.1663 3.86887 15.0163 4.23903C13.3254 3.97333 11.6431 3.97333 9.9868 4.23903C9.83676 3.86064 9.61478 3.39792 9.42053 3.03693C9.40578 3.01036 9.37718 2.99661 9.34855 3.0012C7.77725 3.28523 6.2736 3.78275 4.87052 4.45894C4.85838 4.46444 4.84797 4.47361 4.84106 4.48551C1.98894 8.95771 1.20763 13.32 1.59092 17.6282C1.59265 17.6492 1.60392 17.6694 1.61953 17.6822C3.50128 19.1326 5.32407 20.0132 7.11301 20.5968C7.14164 20.606 7.17197 20.595 7.19019 20.5702C7.61337 19.9637 7.99059 19.3242 8.31402 18.6516C8.33311 18.6122 8.31489 18.5655 8.27588 18.5499C7.67754 18.3117 7.1078 18.0212 6.55975 17.6914C6.5164 17.6648 6.51293 17.5997 6.55281 17.5686C6.66814 17.4779 6.7835 17.3835 6.89363 17.2882C6.91355 17.2708 6.94131 17.2671 6.96474 17.2781C10.5652 19.0035 14.4631 19.0035 18.021 17.2781C18.0445 17.2662 18.0722 17.2699 18.093 17.2873C18.2032 17.3826 18.3185 17.4779 18.4347 17.5686C18.4746 17.5997 18.472 17.6648 18.4286 17.6914C17.8806 18.0276 17.3108 18.3117 16.7116 18.549C16.6726 18.5646 16.6553 18.6122 16.6744 18.6516C17.0047 19.3232 17.382 19.9627 17.7973 20.5693C17.8147 20.595 17.8459 20.606 17.8745 20.5968C19.6721 20.0132 21.4949 19.1326 23.3766 17.6822C23.3931 17.6694 23.4035 17.6502 23.4053 17.6291C23.864 12.6483 22.637 8.32185 20.1525 4.48642C20.1465 4.47361 20.1361 4.46444 20.1239 4.45894ZM8.85169 15.0049C7.76771 15.0049 6.87454 13.9604 6.87454 12.6777C6.87454 11.3949 7.75039 10.3504 8.85169 10.3504C9.96163 10.3504 10.8462 11.4041 10.8288 12.6777C10.8288 13.9604 9.95296 15.0049 8.85169 15.0049ZM16.1619 15.0049C15.0779 15.0049 14.1847 13.9604 14.1847 12.6777C14.1847 11.3949 15.0606 10.3504 16.1619 10.3504C17.2718 10.3504 18.1563 11.4041 18.139 12.6777C18.139 13.9604 17.2718 15.0049 16.1619 15.0049Z" stroke="currentColor" fill="none"></path></svg>
+                        Join out Discord</a>
+                    <svg viewBox="0 0 33 32" focusable="false" class="chakra-icon css-cxhx72"><path d="M8.5 24L24.5 8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11.5 8H24.5V21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none"></path></svg>
+                </div>
+                <div class="add__servers">
+                    <div class="add__servers--title">
+                        <svg viewBox="0 0 25 24" focusable="false" class="chakra-icon css-1s6ukfj">
+                            <rect x="2" y="3.5" width="21" height="7" rx="1.5" fill="none"></rect>
+                            <rect x="2" y="3.5" width="21" height="7" rx="1.5" stroke="currentColor" fill="currentColor" fill-opacity="0.2"></rect>
+                            <rect x="2" y="13.5" width="21" height="7" rx="1.5" fill="none"></rect>
+                            <rect x="2" y="13.5" width="21" height="7" rx="1.5" stroke="currentColor" fill="currentColor" fill-opacity="0.2"></rect>
+                            <circle cx="5.5" cy="7" r="1" fill="currentColor"></circle>
+                            <circle cx="5.5" cy="17" r="1" fill="currentColor"></circle>
+                        </svg> Add Doscord Servers 
+                    </div> 
+                    <div class="add__servers--content">
+                        <div class="grid__container">
+                            <img alt="avatar" src="https://images.discordapp.net/icons/679339772887433226/a_7baec8bacb28dc4d25ca943d33afdac7.png?size=64">
+                            <img alt="avatar" src="https://images.discordapp.net/icons/844431675320565781/03012bf747412d06e690a19e070d2500.png?size=64">
+                            <img alt="avatar" src="https://images.discordapp.net/icons/842851000887803954/bbbc33eb26fa1964577c97c807f3445a.png?size=64">
+                            <img alt="avatar" src="https://images.discordapp.net/icons/445258529679343616/dc50377cbc3d5e17c6b14fdb2a7a75f5.png?size=64">
+                            <img alt="avatar" src="https://images.discordapp.net/icons/859030124656721930/70833f501787576c89dbc709f79b96c8.png?size=64">
+                            <img alt="avatar" src="https://images.discordapp.net/icons/846505161018703972/0b65b6e4bf15ea64fec2194e24d8b14b.png?size=64">
+                            <img alt="avatar" src="https://cdn.top.gg/web-assets/topgg-fallback.png">
+                            <img alt="avatar" src="https://cdn.top.gg/web-assets/topgg-fallback.png">
+                            <img alt="avatar" src="https://images.discordapp.net/icons/844431675320565781/03012bf747412d06e690a19e070d2500.png?size=64">
+                            <img alt="avatar" src="https://images.discordapp.net/icons/859030124656721930/70833f501787576c89dbc709f79b96c8.png?size=64">
+                            <img alt="avatar" src="https://images.discordapp.net/icons/679339772887433226/a_7baec8bacb28dc4d25ca943d33afdac7.png?size=64">
+                        </div>
+                    </div>
+                    <a class="add__servers--login" href="#">Login to add Server</a>
+                </div>
+                <div class="add__bots">
+                    <div class="add__bots--title">
+                        <svg viewBox="0 0 25 24" focusable="false" class="chakra-icon css-1s6ukfj"><g opacity="0.2"><rect x="5" y="4.5" width="15" height="10.5" rx="5.25" fill="currentColor"></rect></g><path d="M3.40552 20.2491C4.32761 18.6531 5.65347 17.3278 7.24991 16.4064C8.84635 15.485 10.6572 15 12.5004 15C14.3437 15 16.1544 15.4851 17.7509 16.4065C19.3473 17.3279 20.6731 18.6533 21.5952 20.2493" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none"></path><rect x="5.5" y="5" width="14" height="9.5" rx="2.5" stroke="currentColor" fill="currentColor" fill-opacity="0.33"></rect><path d="M14 4.5L15.5 1.5" stroke="currentColor" stroke-linecap="round"></path><path d="M11 4.5L9.5 1.5" stroke="currentColor" stroke-linecap="round"></path></svg>Add Discord Bot
+                    </div>
+                    <div class="add__servers--content">
+                        <div class="grid__container">
+                            <img alt="avatar" src="https://images.discordapp.net/avatars/839736739237330944/b97212f5ab7ff52936fba47db6b3be1b.png?size=64">
+                            <img alt="avatar" src="https://images.discordapp.net/avatars/543624467398524935/cc5644a732359da28b3defacd3e9b9a3.png?size=64">
+                            <img alt="avatar" src="https://images.discordapp.net/avatars/846499737242959962/75babad81947ab980e86a0109306f69f.png?size=64">
+                            <img alt="avatar" src="https://images.discordapp.net/avatars/890495595679195196/81b9662f6eed3308c384bcfa3900ea37.png?size=64">
+                            <img alt="avatar" src="https://images.discordapp.net/avatars/907821047070478347/58ab14f3c977e0dcc29f4dbbbcb11c58.png?size=64">
+                            <img alt="avatar" src="https://images.discordapp.net/avatars/898374041650487296/3783ee1f3198ee13af18255fdf46a266.png?size=64">
+                            <img alt="avatar" src="https://images.discordapp.net/avatars/839919247866331218/362031ab67ee8a669e1d7a12e464baf0.png?size=64">
+                            <img alt="avatar" src="https://images.discordapp.net/avatars/903377277876830278/226029587e524971c8112c654ad2bbfe.png?size=64">
+                            <img alt="avatar" src="https://images.discordapp.net/avatars/775002266171080724/1a201f3f1a826c9f931032dae4475f9d.png?size=64">
+                            <img alt="avatar" src="https://images.discordapp.net/avatars/839736739237330944/b97212f5ab7ff52936fba47db6b3be1b.png?size=64">
+                        </div>
+                    </div>
+                    <a class="add__servers--login" href="#">Login to add Bot</a>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
