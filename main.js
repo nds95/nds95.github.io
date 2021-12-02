@@ -54,6 +54,8 @@ var topDesc = document.querySelector(`#main > section.discord-bots > div.bots__t
 var topButton = document.querySelector('.discord__filter--top');
 var newButton = document.querySelector('.discord__filter--new');
 var toggleButton = document.querySelector('.discord-filter__toggle');
+var topContent = document.querySelector('article:nth-child(4)');
+var newContent = document.querySelector('article:nth-child(5)');
 
 document.addEventListener("DOMContentLoaded", () => {
     topButton.click();
@@ -66,6 +68,8 @@ function showTop() {
     toggleButton.classList.remove("toggle--left");
     newButton.classList.add("discord__filter--new-hover");
     topButton.classList.remove("discord__filter--top-hover");
+    newContent.style.display = "none";
+    topContent.style.display = "grid";
 };
 
 function showNew() {
@@ -75,6 +79,8 @@ function showNew() {
     toggleButton.classList.remove("toggle--right");
     topButton.classList.add("discord__filter--top-hover");
     newButton.classList.remove("discord__filter--new-hover");
+    newContent.style.display = "grid";
+    topContent.style.display = "none";
 };
 
 //discord-title click event
@@ -82,23 +88,23 @@ function showNew() {
 var discordBots = document.querySelector(`#main > section.discord-bots > div.discord__title > a:nth-child(1)`);
 var discordServers = document.querySelector(`#main > section.discord-bots > div.discord__title > a:nth-child(2)`);
 var discordBorder = document.querySelector(`.discord-title__border`);
-// var botsContent = document.querySelector(`#main > section.discord-bots > article:nth-child(4)`);
-// var serversContent = document.querySelector(`#main > section.discord-bots > article:nth-child(5)`);
+var botsContent = document.querySelector(`#main > section.discord-bots > article:nth-child(4)`);
+var serversContent = document.querySelector(`#main > section.discord-bots > article:nth-child(5)`);
 
 var botsContent = document.querySelector('.bots-content');
 
-// discordServers.addEventListener("click", () => {
-//     discordBorder.style.width = "139px";
-//     discordBorder.style.transform = "translateX(145px)";
-//     serversContent.style.display = "grid";
-//     botsContent.style.display = "none";
-// })
+discordServers.addEventListener("click", () => {
+    discordBorder.style.width = "139px";
+    discordBorder.style.transform = "translateX(145px)";
+    serversContent.style.display = "grid";
+    botsContent.style.display = "none";
+})
 
-// discordBots.addEventListener("click", () => {
-//     discordBorder.style.width = "112px";
-//     discordBorder.style.transform = "translateX(0px)";
-//     botsContent.style.display = "grid";
-//     serversContent.style.display = "none";
-// })
+discordBots.addEventListener("click", () => {
+    discordBorder.style.width = "112px";
+    discordBorder.style.transform = "translateX(0px)";
+    botsContent.style.display = "grid";
+    serversContent.style.display = "none";
+})
 
 //bots, servers content view
